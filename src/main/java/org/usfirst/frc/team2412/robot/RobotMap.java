@@ -6,7 +6,7 @@ import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.drive.MecanumDrive;
 
 public class RobotMap {
-	
+	public static Oi m_oi = new Oi();
 	//---------------------------------------------
 	public static int frontRightMotorID = 1;
 	public static int backRightMotorID = 2;

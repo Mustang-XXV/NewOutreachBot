@@ -1,6 +1,8 @@
 package org.usfirst.frc.team2412.robot.subsystems;
 
 import org.usfirst.frc.team2412.robot.RobotMap;
+import org.usfirst.frc.team2412.robot.commands.DriveCommand;
+
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
@@ -13,7 +15,7 @@ public class DriveBaseSubsystem extends Subsystem{
 	@Override
 	protected void initDefaultCommand() {
 		
-		
+	setDefaultCommand(new DriveCommand());	
 	}
 	
 	public void drive(Joystick stick) {
